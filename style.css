@@ -69,3 +69,6 @@ background-color: skyblue;
     display: inline-flex;
    
 }
+.contact-me a {
+    display: flex;
+}
