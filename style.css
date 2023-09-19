@@ -1,74 +1,107 @@
-.body {
-background-color: skyblue;
-}
-
-.work img {
-    width: 80%;
-    height: 50%;
-    display: inline-block;
-}
-
-.header {
-    background-color: skyblue;
-    color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 50px;
-    margin: auto;
+/*resets rule*/
+body, header, nav, main, h1, div, img, ul, p,
+section, article{
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 
-.header h1 {
-    display: inline-block;
-    font-size: 48px;
-    margin: 0; 
+/*Rules for body*/
+body{
+    background-color: #e1e0f0;
 }
 
-.header div {
-    padding-top: 15px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+/*Rules for header*/
+header {
+    background-color: #e1e0f0;
     font-size: 20px;
 }
 
-.header div ul {
-    list-style-type: none;
-    padding: 0; 
+
+/*rules for nav*/
+nav {
+    background-color: blue;
+    padding: 60px;
 }
 
-.header div ul li {
-    display: inline-block;
-    margin-left: 25px;
-}
-
-.content {
-    width: 70%; 
-    display: inline-block;
-    margin-left: 20px;
-    padding-top: 20px; 
-}
-
-.about-me,
-.work,
-.contact-me {
-    margin-bottom: 40px;
+#name h1{
+    float: left;
+    display: flex;
+    background-color: #18222c;
+    color: skyblue;
     padding: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: skyblue;
-    color: black;
+    margin: 10px;
 }
 
-.about-me h2,
-.work h2,
-.contact-me h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
+nav ul{
+    float: right;
+    margin: -10px;
 }
 
-.image {
-    display: inline-flex;
-   
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 30px;
+    font-weight: bold;
 }
-.contact-me a {
+
+nav li a {
+    list-style-type: none;   
+    color: #18222c;
+}
+
+
+/*Rules for header figure*/
+#pHeader{
+    position: relative;
+}
+
+#pHeader img {
+    width: 40%;
+    max-height: auto;
+}
+
+#pHeader figcaption {
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+    background-color: #18222c;
+    color:skyblue;
+    padding: 40px;
+    font-size: 40px;
+    margin: 20px;
+}
+
+
+/*Rules for main sections*/
+#aboutMe, #work, #contactMe, #resume, h3 {
+    font-size: 70px;
+    font-weight: bold;
+    border-right: 5px solid #18222c;
+    
+    color: blue;
+    margin-right: 10px;
+    margin-left: 20px;
+    padding-right: 10px;
+}
+
+#aboutMe, #work, #contactMe, #resume, p{
+    font-size: 25px;
+    margin: 10px;
+    width: 1700px;
+}
+
+#aboutMe, #work, #contactMe, #resume, p, h3{
+    display: inline-block;
+
+}
+
+#work img {
+    display: flex;
+    width: 100%;
+}
+#contactMe a {
     display: flex;
 }
